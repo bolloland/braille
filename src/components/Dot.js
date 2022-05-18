@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Dot = (props) => {
+const Dot = () => {
   return (
-    <div>Dot</div>
+    <div><h1>DOT</h1></div>
   )
 }
 
