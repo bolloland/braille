@@ -1,0 +1,23 @@
+.braille-container {
+	background-color: white;
+	width: 300px;
+	margin: 30px auto;
+	
+    display: grid;
+    grid-template-columns: repeat(2,150px);  /* 3 columns */
+    grid-template-rows: repeat(3,150px); /* 3 rows  */
+    grid-gap:10px 10px; 
+
+    border-width: 3px;
+    border-color: black;
+
+}
+
+.dot {
+	padding: 10px;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: rgb(230, 8, 8);
+    border-width: 3px;
+    border-color: black;
+}
