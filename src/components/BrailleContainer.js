@@ -37,15 +37,16 @@ const BrailleContainer = () => {
 
     
     return (
-    <div className="braille-container">
-     {dots && dots.map((dot) => {
-        return ( 
-          <button 
-          key={dot.name} 
-          value={dot.value} 
-          image={dot.image}
-          onClick={switchColor(dot)}
-          >{dot.text}</button>
+      <div className="braille-container">
+         {dots && dots.map((dot) => {
+          return ( 
+            <button 
+            key={dot.name} 
+            className="dot"
+            value={dot.value} 
+            image={dot.image}
+            onClick={()=>switchColor(dot)}
+            >{dot.text}</button>
           )
       })}
     </div>
