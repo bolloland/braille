@@ -1,18 +1,28 @@
 import React from 'react'
-import Dot from './Dot'
+import '../styles/braille-container.css'
 
-const DotContainer = () => {
+
+const DotContainer = (props) => {
+
+    const { dot, switchColor } = props
+
   return (
-    <div>
-    <h4>"dot container here"</h4>
-    <Dot id="dot-1"/>
-    <Dot id="dot-2"/>
-    <Dot id="dot-3"/>
-    <Dot id="dot-4"/>
-    <Dot id="dot-5"/>
-    <Dot id="dot-6"/>
+    <div className="braille-container">  
+      <button 
+        key={dot.name} 
+        className="dot"
+        value={dot.value} 
+        image={dot.image}
+        onClick={()=>switchColor(dot)}
+        >
+        {dot.text}
+      </button>
     </div>
+
+
   )
 }
+
+
 
 export default DotContainer
