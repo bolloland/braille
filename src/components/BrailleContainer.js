@@ -3,6 +3,7 @@ import '../styles/braille-container.css'
 import "../images/blackdot.PNG"
 import { useState } from 'react'
 import { DOT_DATA } from '../braille-data/constants'
+import DotContainer from './DotContainer'
 
 
 const BrailleContainer = () => {
@@ -40,18 +41,24 @@ const BrailleContainer = () => {
       <div className="braille-container">
          {dots && dots.map((dot) => {
           return ( 
-            <button 
-            key={dot.name} 
-            className="dot"
-            value={dot.value} 
-            image={dot.image}
-            onClick={()=>switchColor(dot)}
-            >{dot.text}</button>
+            <DotContainer key={dot.name} dot={dot} switchColor={switchColor}   />
           )
-      })}
-    </div>
+         })}
+      </div>
+         )
+      
+    //         <button 
+    //         key={dot.name} 
+    //         className="dot"
+    //         value={dot.value} 
+    //         image={dot.image}
+    //         onClick={()=>switchColor(dot)}
+    //         >{dot.text}</button>
+    //       )
+    //   })}
+    // </div>
 
-    )
+    
 }
 
 export default BrailleContainer
