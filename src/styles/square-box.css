@@ -1,0 +1,17 @@
+.square-box {
+    display: flex;
+	font-size: 50px;
+	font-family: sans-serif;
+	color: black;
+    
+
+    background-color: #2ecc71;
+    width: 75px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    margin: 8px auto;
+    margin-top: 28px;
+    margin-left: 0 px;
+
+}

@@ -1,11 +1,11 @@
 .braille-container {
 	background-color: white;
-	width: 300px;
-	margin: 30px auto;
+	width: 210px;
+	margin: 20px auto;
 	
     display: grid;
-    grid-template-columns: repeat(2,150px);  /* 3 columns */
-    grid-template-rows: repeat(3,150px); /* 3 rows  */
+    grid-template-columns: repeat(2,100px);  /* 3 columns */
+    grid-template-rows: repeat(3,100px); /* 3 rows  */
     grid-gap:10px 10px; 
 
     border-width: 3px;
@@ -20,4 +20,5 @@
 	color: rgb(230, 8, 8);
     border-width: 3px;
     border-color: black;
+    
 }
