@@ -5,6 +5,8 @@ import BrailleContainer from './components/BrailleContainer'
 import DotContainer from './components/DotContainer';
 import Navbar from './components/Navbar';
 import { useNavigate, Routes, Route } from 'react-router'
+import AcceptButton from './components/AcceptButton';
+import SymbolContainer from './components/SymbolContainer';
 // import Reference from './components/Reference';
 // import Encrypt from './components/Encrypt';
 
@@ -20,6 +22,8 @@ function App() {
       <Route exact path="/encrypt" element={<Encrypt />} /> */}
       <Route />
     </Routes>
+    <SymbolContainer />
+    <AcceptButton />
     </div>
   );
 }
