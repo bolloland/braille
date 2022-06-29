@@ -1,4 +1,4 @@
-const letters = [
+export const letters = [
     {id: 1, 
         letter: "A", 
         pattern: [true, false, false, false, false, false]}, 
@@ -12,7 +12,3 @@ const letters = [
         letter: "D", 
         pattern: [true, true, true, false, false, false]}
     ]
-
-
-
-export default letters
