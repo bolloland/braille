@@ -15,6 +15,8 @@ import ContextProvider from './ContextProvider';
 function App() {
   return (
     <div className="App">
+    
+    <ContextProvider>
     Here's the App:
     <Navbar />
     <Routes>
@@ -24,8 +26,7 @@ function App() {
       <Route />
     </Routes>
     <SymbolContainer />
-    <AcceptButton />
-    <ContextProvider />
+    <AcceptButton /></ContextProvider>
     </div>
   );
 }
