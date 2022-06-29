@@ -12,8 +12,9 @@ const BrailleContainer = () => {
     // console.log(dots, "current dots")
     
     const enteredArray = dots.map((dot) => dot.value)
-    console.log(enteredArray, "enteredArray")
+    // console.log(enteredArray, "enteredArray")
 
+    // dots.map((dot) => dotArray.push(dot.value)
 
     const switchColor = (dot) => {
       // can't alter state, so make a copy (newDot) and pass that to setState
