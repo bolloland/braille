@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import '../styles/braille-container.css'
-import "../images/blackdot.PNG"
+import blackdot from "../images/blackdot.PNG"
+import bluedot from "../images/bluedot.PNG"
 // import { useState } from 'react'
 // import { DOT_DATA } from '../braille-data/constants'
 import DotContainer from './DotContainer'
@@ -30,17 +31,18 @@ const BrailleContainer = () => {
 
       if (dot.value !== true) {
           newDot = {
+      
             name: dot.name,
             value: true,
             text: "blue",
-            image: ""
+            
             }
         } else {
           newDot = {
             name: dot.name,
             value: false,
             text: "black",
-            image: ""
+            
           }
         }
         // find and replace clicked dot
@@ -49,7 +51,6 @@ const BrailleContainer = () => {
         setDots(newDots)
     }
 
-    
     return (
       <div className="braille-container">
          {dots && dots.map((dot) => {

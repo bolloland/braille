@@ -10,12 +10,11 @@ const DotContainer = (props) => {
     <div className="braille-container">  
       <button 
         key={dot.name} 
-        className="dot"
+        className={dot.value === true ? "dot-blue" : "dot-black"}
         value={dot.value} 
-        image={dot.image}
         onClick={()=>switchColor(dot)}
         >
-        {dot.text}
+        {/* {dot.text} */}
       </button>
     </div>
 

@@ -24,8 +24,6 @@ const SymbolContainer = () => {
                {letters[i].symbol}
                 </div>
                 )  
-            
-
         }
     }
 

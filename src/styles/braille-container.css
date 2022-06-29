@@ -1,5 +1,5 @@
 .braille-container {
-	background-color: white;
+	
 	width: 210px;
 	margin: 20px auto;
 	
@@ -10,15 +10,33 @@
 
     border-width: 3px;
     border-color: black;
+   
+    
 
 }
 
-.dot {
+.dot-blue {
+    
+	padding: 10px;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: rgb(230, 8, 8);
+    
+    border-width: 3px;
+    border-color: blue;
+    background-color: blue;
+    border-radius: 50px;
+    
+}
+
+.dot-black {
 	padding: 10px;
 	font-size: 20px;
 	font-family: sans-serif;
 	color: rgb(230, 8, 8);
     border-width: 3px;
     border-color: black;
+    background-color: black;
+    border-radius: 50px;
     
 }
