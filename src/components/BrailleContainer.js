@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../styles/braille-container.css'
 import "../images/blackdot.PNG"
-import { useState } from 'react'
-import { DOT_DATA } from '../braille-data/constants'
+// import { useState } from 'react'
+// import { DOT_DATA } from '../braille-data/constants'
 import DotContainer from './DotContainer'
+import { MyContext } from '../ContextProvider'
 
 
 const BrailleContainer = () => {
+
+    const context = useContext(MyContext)
+    // console.log(context)
+    const {dots, setDots} = context
+
   // create initial state as DOTDATA
-    const [dots, setDots] = useState(DOT_DATA)
+
+    // const [dots, setDots] = useState(DOT_DATA)
     // console.log(dots, "current dots")
     
-    const enteredArray = dots.map((dot) => dot.value)
+    // const enteredArray = dots.map((dot) => dot.value)
     // console.log(enteredArray, "enteredArray")
 
     // dots.map((dot) => dotArray.push(dot.value)
