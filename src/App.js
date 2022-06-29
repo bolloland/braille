@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import { useNavigate, Routes, Route } from 'react-router'
 import AcceptButton from './components/AcceptButton';
 import SymbolContainer from './components/SymbolContainer';
+import ContextProvider from './ContextProvider';
 // import Reference from './components/Reference';
 // import Encrypt from './components/Encrypt';
 
@@ -24,6 +25,7 @@ function App() {
     </Routes>
     <SymbolContainer />
     <AcceptButton />
+    <ContextProvider />
     </div>
   );
 }
