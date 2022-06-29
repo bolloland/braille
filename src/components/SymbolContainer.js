@@ -3,7 +3,10 @@ import '../styles/square-box.css'
 import { MyContext } from '../ContextProvider'
 import { letters } from '../braille-data/seed'
 
+
 const SymbolContainer = () => {
+    // const [symbol, setSymbol] = useState("?")
+
     const context = useContext(MyContext)
     const {dots} = context
     const enteredArray = dots.map((dot) => dot.value)
@@ -12,13 +15,16 @@ const SymbolContainer = () => {
     const jsonArray = JSON.stringify(enteredArray)
     console.log(jsonArray, "json-entered")
 
-    const [symbol, setSymbol] = useState("?")
 
     for (let i = 0; i < letters.length; i++) {
         let letterArray = JSON.stringify(letters[i].pattern); 
         if (jsonArray === letterArray) {
-            console.log(letters[i].symbol)
-            setSymbol(letters[i].symbol)
+            return (
+                <div className="square-box">
+               {letters[i].symbol}
+                </div>
+                )  
+            
 
         }
     }
@@ -26,7 +32,7 @@ const SymbolContainer = () => {
 
     return (
         <div className="square-box">
-       {symbol}
+       ?
         </div>
         )    
     
