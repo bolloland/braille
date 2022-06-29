@@ -1,14 +1,10 @@
 import './App.css';
-// import { useDispatch } from 'react-redux';
-// import { useEffect } from 'react'
 import BrailleContainer from './components/BrailleContainer'
 import Navbar from './components/Navbar';
 import { Routes, Route } from 'react-router'
 import AcceptButton from './components/AcceptButton';
 import SymbolContainer from './components/SymbolContainer';
 import ContextProvider from './ContextProvider';
-// import Reference from './components/Reference';
-// import Encrypt from './components/Encrypt';
 
 
 function App() {
@@ -16,7 +12,6 @@ function App() {
     <div className="App">
     
     <ContextProvider>
-    Here's the App:
     <Navbar />
     <Routes>
       <Route exact path="/" element={<BrailleContainer />} />
