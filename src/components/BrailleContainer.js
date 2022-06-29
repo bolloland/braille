@@ -9,6 +9,11 @@ import DotContainer from './DotContainer'
 const BrailleContainer = () => {
   // create initial state as DOTDATA
     const [dots, setDots] = useState(DOT_DATA)
+    // console.log(dots, "current dots")
+    
+    const enteredArray = dots.map((dot) => dot.value)
+    console.log(enteredArray, "enteredArray")
+
 
     const switchColor = (dot) => {
       // can't alter state, so make a copy (newDot) and pass that to setState
@@ -46,19 +51,7 @@ const BrailleContainer = () => {
          })}
       </div>
          )
-      
-    //         <button 
-    //         key={dot.name} 
-    //         className="dot"
-    //         value={dot.value} 
-    //         image={dot.image}
-    //         onClick={()=>switchColor(dot)}
-    //         >{dot.text}</button>
-    //       )
-    //   })}
-    // </div>
-
-    
+  
 }
 
 export default BrailleContainer
