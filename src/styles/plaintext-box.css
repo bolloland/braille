@@ -1,19 +1,16 @@
-.square-box {
+.plaintext-box {
     display: flex;
-	font-size: 50px;
+	font-size: 40px;
 	font-family: sans-serif;
 	color: black;
-    
 
-    background-color: #2ecc71;
-    width: 100px;
-    height: 75px;
+    background-color: #ccc92e;
+    width: 80%;
+    height: 55px;
     align-items: center;
     justify-content: center;
     margin: 8px auto;
     margin-top: 28px;
     margin-left: 0 px;
-    border-color: black;
-    border-width: 5px;
 
 }

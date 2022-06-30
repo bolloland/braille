@@ -26,6 +26,10 @@
     border-color: blue;
     background-color: blue;
     border-radius: 50px;
+
+    color: #444;
+    text-shadow: 0 0 2px #000;
+    padding: 20px 10px 10px 0;
     
 }
 
