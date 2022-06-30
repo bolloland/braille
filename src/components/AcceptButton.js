@@ -1,14 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
+
 
 const AcceptButton = () => {
 
-  const findLetter = () => {
-    // console.log("find that letter")
+   const moveText = () => {
+    let newText = document.getElementById("input").innerText
+    document.getElementById("output").innerText += newText
   }
+  const cleartext = () => {
+    document.getElementById("output").innerText = ""
+  }
+
+
+
+
+
    return (
-    <div><button type="submit" value="submit" onClick={() => findLetter()}>
+    <div>
+    <button  onClick={() => moveText()}>
       AcceptButton
-    </button></div>
+    </button>
+    <button onClick={()=> cleartext()}>
+      Clear
+    </button>
+    </div>
   )
 }
 
