@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import '../styles/braille-container.css'
-import blackdot from "../images/blackdot.PNG"
-import bluedot from "../images/bluedot.PNG"
+// import blackdot from "../images/blackdot.PNG"
+// import bluedot from "../images/bluedot.PNG"
 // import { useState } from 'react'
 // import { DOT_DATA } from '../braille-data/constants'
 import DotContainer from './DotContainer'

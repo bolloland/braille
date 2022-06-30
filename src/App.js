@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router'
 import AcceptButton from './components/AcceptButton';
 import SymbolContainer from './components/SymbolContainer';
 import ContextProvider from './ContextProvider';
+import PlainText from './components/PlainText';
 
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
       <Route />
     </Routes>
     <SymbolContainer />
-    <AcceptButton /></ContextProvider>
+    <AcceptButton />
+    <PlainText />
+    </ContextProvider>
     </div>
   );
 }

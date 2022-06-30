@@ -8,7 +8,7 @@ export const MyContext = createContext({
     })
 
 const ContextProvider = (props) => {
-    console.log(MyContext)
+    // console.log(MyContext)
     const [dots, setDots] = useState(DOT_DATA)
 
     const values = {
