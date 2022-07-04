@@ -4,16 +4,12 @@
 	font-family: sans-serif;
 	color: black;
     
-
     background-color: #2ecc71;
     width: 100px;
     height: 75px;
     align-items: center;
     justify-content: center;
-    margin: 8px auto;
+    margin: 0px auto;
     margin-top: 28px;
-    margin-left: 0 px;
-    border-color: black;
-    border-width: 5px;
 
 }
