@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import '../styles/square-box.css'
 import { MyContext } from '../ContextProvider'
 import { letters } from '../braille-data/seed'
