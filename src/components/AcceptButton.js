@@ -9,6 +9,7 @@ const AcceptButton = () => {
   }
   const cleartext = () => {
     document.getElementById("output").innerText = ""
+    // get all dots to have value of false? mycontext and re-render?
   }
 
 
@@ -18,10 +19,10 @@ const AcceptButton = () => {
    return (
     <div>
     <button  onClick={() => moveText()}>
-      AcceptButton
+      Move Text
     </button>
     <button onClick={()=> cleartext()}>
-      Clear
+      Clear Field
     </button>
     </div>
   )
