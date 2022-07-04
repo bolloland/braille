@@ -1,10 +1,10 @@
-.plaintext-box {
+.navbar {
     display: flex;
 	font-size: 40px;
 	font-family: sans-serif;
-	color: black;
+	color: #ccc92e;
 
-    background-color: #ccc92e;
+    background-color: black;
     width: 80%;
     height: 55px;
     align-items: center;
@@ -12,5 +12,4 @@
     margin: 8px auto;
     margin-top: 10px;
     margin-left: 0 px;
-
 }
