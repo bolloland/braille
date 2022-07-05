@@ -3,7 +3,7 @@ import '../styles/navbar.css'
 
 const Navbar = () => {
   return (
-    <div className="navbar" id="navbar">BRAILLE TRANSLATOR</div>
+    <div className="navbar" id="navbar">BRAILLE TRANSR</div>
   )
 }
 
