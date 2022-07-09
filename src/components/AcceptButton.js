@@ -1,7 +1,12 @@
-import React from 'react'
-
+import React, { useContext } from 'react'
+import { DOT_DATA } from '../braille-data/constants'
+import { MyContext } from '../ContextProvider'
 
 const AcceptButton = () => {
+
+  const context = useContext(MyContext)
+    // console.log(context)
+    const {dots, setDots} = context
 
    const moveText = () => {
     let newText = document.getElementById("input").innerText
@@ -9,12 +14,9 @@ const AcceptButton = () => {
   }
   const cleartext = () => {
     document.getElementById("output").innerText = ""
+    setDots(DOT_DATA)
     // get all dots to have value of false? mycontext and re-render?
   }
-
-
-
-
 
    return (
     <div>
