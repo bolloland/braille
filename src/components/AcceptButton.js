@@ -6,7 +6,7 @@ const AcceptButton = () => {
 
   const context = useContext(MyContext)
     // console.log(context)
-    const {dots, setDots} = context
+    const {setDots} = context
 
    const moveText = () => {
     let newText = document.getElementById("input").innerText
