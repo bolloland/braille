@@ -8,14 +8,14 @@ export const MyContext = createContext({
     })
 
 const ContextProvider = (props) => {
-    // console.log(MyContext)
+    console.log(props, "ContextProps")
     const [dots, setDots] = useState(DOT_DATA)
 
     const values = {
         dots: dots,
         setDots: setDots
     }
-
+// anything inside the Provider, will gain access to the props.children (anything in MyContext)
     return (
         <div>
             <MyContext.Provider value={values}>
